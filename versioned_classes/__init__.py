@@ -15,5 +15,4 @@ def versioned_class(cls):
                 if isinstance(method, types.FunctionType):
                     m.update(inspect.getsource(method).encode("utf-8"))
             self.__version__ = m.hexdigest()
-            print(self.__version__)
     return Wrapper
